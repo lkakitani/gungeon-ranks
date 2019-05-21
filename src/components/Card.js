@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Card = props => {
     return (
-        <div className="card">
+        <div className="ui card">
             <div className="content">
                 <div className="header">{props.itemName}</div>
                 <div className="meta">{props.itemQuote}</div>
@@ -19,7 +19,7 @@ export const Card = props => {
 
 export const RerollCard = () => {
     return (
-        <div className="card">
+        <div className="ui card">
             <div className="content">
                 <div className="header">?</div>
                 <div className="description">

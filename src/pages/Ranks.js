@@ -1,8 +1,11 @@
 import React from 'react';
+import {Segment} from "../components/Segment";
 
 export const Ranks = () => {
     return (
-        <div>Ranks!</div>
+      <div>
+          <Segment title="Ranks" />
+      </div>
     );
 }
 
