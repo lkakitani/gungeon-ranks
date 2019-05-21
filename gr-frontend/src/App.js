@@ -16,13 +16,13 @@ class App extends React.Component {
             <div className="ui inverted secondary menu">
               <Link to="/" className="item active">
                 Home
-                            </Link>
+              </Link>
               <Link to="/ranks" className="item">
                 Ranks
-                            </Link>
+              </Link>
               <Link to="/changes" className="item">
                 News
-                            </Link>
+              </Link>
             </div>
           </div>
           <Route path="/" exact component={Home} />
@@ -34,13 +34,8 @@ class App extends React.Component {
     );
   }
 
-  componentDidMount() {
-    window.navigator.geolocation.getCurrentPosition(
-      position => this.setState({ lat: position.coords.latitude }),
-      err => this.setState({ errorMessage: err.message })
-    );
-    setTimeout(() => this.setState({ lat: "aeho" }), 5000)
-  }
+  componentDidMount() { }
+
 }
 
 export default App;
