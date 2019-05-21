@@ -1,18 +1,46 @@
 import React from 'react';
-import {Card, RerollCard} from './components/Card'
-import {Segment} from "./components/Segment";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Home, Ranks, Changes } from './pages';
 
-function App() {
-  return (
-      <div>
-          <Segment title="Rank Items" />
-          <div className="ui cards">
-              <Card itemName="Casey" itemQuote="Batting .50" />
-              <RerollCard />
-              <Card itemName="Pea Shooter" itemQuote="Baby's First Gun" />
-          </div>
-      </div>
-  );
+
+class App extends React.Component {
+
+    state = { lat: undefined, errorMessage: '' };
+
+    render() {
+        return (
+
+            <div className="ui container">
+                <Router>
+                    <div className="ui inverted segment">
+                        <div className="ui inverted secondary menu">
+                            <Link to="/" className="item active">
+                                Home
+                            </Link>
+                            <Link to="/ranks" className="item">
+                                Ranks
+                            </Link>
+                            <Link to="/changes" className="item">
+                                News
+                            </Link>
+                        </div>
+                    </div>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/ranks/" component={Ranks} />
+                    <Route path="/changes/" component={Changes} />
+                </Router>
+            </div>
+
+        );
+    }
+
+    componentDidMount() {
+        window.navigator.geolocation.getCurrentPosition(
+            position => this.setState({ lat: position.coords.latitude }),
+            err => this.setState({errorMessage: err.message})
+        );
+        setTimeout(() => this.setState({lat: "aeho"}), 5000)
+    }
 }
 
 export default App;
