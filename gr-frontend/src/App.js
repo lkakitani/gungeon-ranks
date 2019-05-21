@@ -5,42 +5,42 @@ import { Home, Ranks, Changes } from './pages';
 
 class App extends React.Component {
 
-    state = { lat: undefined, errorMessage: '' };
+  state = { lat: undefined, errorMessage: '' };
 
-    render() {
-        return (
+  render() {
+    return (
 
-            <div className="ui container">
-                <Router>
-                    <div className="ui inverted segment">
-                        <div className="ui inverted secondary menu">
-                            <Link to="/" className="item active">
-                                Home
+      <div className="ui container">
+        <Router>
+          <div className="ui inverted segment">
+            <div className="ui inverted secondary menu">
+              <Link to="/" className="item active">
+                Home
                             </Link>
-                            <Link to="/ranks" className="item">
-                                Ranks
+              <Link to="/ranks" className="item">
+                Ranks
                             </Link>
-                            <Link to="/changes" className="item">
-                                News
+              <Link to="/changes" className="item">
+                News
                             </Link>
-                        </div>
-                    </div>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/ranks/" component={Ranks} />
-                    <Route path="/changes/" component={Changes} />
-                </Router>
             </div>
+          </div>
+          <Route path="/" exact component={Home} />
+          <Route path="/ranks/" component={Ranks} />
+          <Route path="/changes/" component={Changes} />
+        </Router>
+      </div>
 
-        );
-    }
+    );
+  }
 
-    componentDidMount() {
-        window.navigator.geolocation.getCurrentPosition(
-            position => this.setState({ lat: position.coords.latitude }),
-            err => this.setState({errorMessage: err.message})
-        );
-        setTimeout(() => this.setState({lat: "aeho"}), 5000)
-    }
+  componentDidMount() {
+    window.navigator.geolocation.getCurrentPosition(
+      position => this.setState({ lat: position.coords.latitude }),
+      err => this.setState({ errorMessage: err.message })
+    );
+    setTimeout(() => this.setState({ lat: "aeho" }), 5000)
+  }
 }
 
 export default App;
