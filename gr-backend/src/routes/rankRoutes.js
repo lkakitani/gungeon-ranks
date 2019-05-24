@@ -1,4 +1,4 @@
-import { testGet, testPost } from '../controllers/rankController';
+const { testGet, testPost } = require('../controllers/rankController');
 
 const routes = (app) => {
   app.route('/test')
@@ -11,4 +11,4 @@ const routes = (app) => {
   //   .delete(deleteDownload)
 }
 
-export default routes;
+module.exports = routes;
