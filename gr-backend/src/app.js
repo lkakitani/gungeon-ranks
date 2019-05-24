@@ -1,7 +1,9 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import routes from './routes/rankRoutes';
+import { sequelize } from './db';
 
+// require('dotenv').config();
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }))
