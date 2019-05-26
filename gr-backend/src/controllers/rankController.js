@@ -1,16 +1,19 @@
 const db = require('../db');
 const Passive = require('../models/Passive');
 
-const testGet = async (req, res) => {
-  const all = await Passive.findAll();
-  console.log(all);
+const getOptions = async (req, res) => {
+  const voteOptions = await Passive.findAll({
+    limit: 2,
+    order: ['vote_count']
+  });
+  console.log('voteOptions: ', voteOptions);
   res.json({ teste: 'ok get' });
 }
 
-const testPost = (req, res) => {
+const castVote = async (req, res) => {
   res.json({ teste: 'ok post' });
 }
 
 module.exports = {
-  testGet, testPost
+  getOptions, castVote
 }
