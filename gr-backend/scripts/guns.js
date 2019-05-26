@@ -15,16 +15,16 @@ fs.readFile(__dirname + '/guns.xml', function (err, data) {
     result.table.tbody[0].tr.forEach(gun => {
       // console.log(gun);
 
-      const gunName = gun.td[1].a[0]._.trim();
+      const gunName = gun.td[1].a[0]._.trim().replace(/'/g, "''");
       console.log(gunName);
 
       const iconPath = gun.td[0].a[0].img[0].$.src;
-      const quote = gun.td[2].trim();
+      const quote = gun.td[2].trim().replace(/'/g, "''");
       const quality = gun.td[3].a[0].img[0].$.alt.replace(' Quality Item.png', '').replace('1', '');
       const wikiPage = gunName.replace(/ /g, '_').replace(/'/g, '%27');
 
       const insertSQL = `INSERT INTO guns (created_at, updated_at, name, icon_path, quote, quality, wiki_page, boss_rating, room_rating) 
-      VALUES (CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP(), "${gunName}", "${iconPath}", "${quote}", "${quality}", "${wikiPage}", 1200, 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, '${gunName}', '${iconPath}', '${quote}', '${quality}', '${wikiPage}', 1200, 1200);
 
 `;
 

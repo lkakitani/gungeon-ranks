@@ -11,17 +11,17 @@ fs.readFile(__dirname + '/items.xml', function (err, data) {
 
     result.table.tbody[0].tr.forEach(item => {
 
-      const itemName = item.td[1].a[0]._.trim();
+      const itemName = item.td[1].a[0]._.trim().replace(/'/g, "''");
       console.log(itemName);
 
       const iconPath = item.td[0].a[0].img[0].$.src;
-      const quote = item.td[3].trim();
+      const quote = item.td[3].trim().replace(/'/g, "''");
       const type = item.td[2].trim(); // Passive / Active
       const quality = item.td[4].a[0].img[0].$.alt.replace(' Quality Item.png', '').replace('1', '');
       const wikiPage = itemName.replace(/ /g, '_').replace(/'/g, '%27');
 
       const insertSQL = `INSERT INTO ${type.toLowerCase()}s (created_at, updated_at, name, icon_path, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP(), "${itemName}", "${iconPath}", "${quote}", "${quality}", "${wikiPage}", 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, '${itemName}', '${iconPath}', '${quote}', '${quality}', '${wikiPage}', 1200);
 
 `;
 
