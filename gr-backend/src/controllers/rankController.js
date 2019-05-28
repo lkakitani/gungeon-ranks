@@ -1,5 +1,6 @@
 const Passive = require('../models/Passive');
 const Crypto = require('../services/crypto');
+const Rating = require('../services/rating');
 
 const getOptions = async (req, res) => {
   const voteOptions = await Passive.findAll({
@@ -12,18 +13,31 @@ const getOptions = async (req, res) => {
   res.json({
     ballotLeft: buildBallot(left, right),
     ballotRight: buildBallot(right, left),
-    left,
-    right
+    left: buildVoteInfo(left),
+    right: buildVoteInfo(right)
   });
 }
 
 const castVote = async (req, res) => {
-  res.json({ teste: 'ok post' });
+  const ballot = req.body.ballot;
+  if (!ballot) {
+    res
+      .status(400)
+      .json({ error: 'invalid post' });
+  }
+
+  Rating.computeVote(Crypto.decrypt(ballot));
+  res.json({ status: 'ok' });
 }
 
 const buildBallot = (chosenOption, otherOption) => {
   const vote = `${chosenOption.id}::${otherOption.id}::${Date.now()}`;
   return Crypto.encrypt(vote);
+}
+
+const buildVoteInfo = (option) => {
+  const { id, name, quality, quote, icon_path, wiki_page } = option;
+  return { id, name, quality, quote, icon_path, wiki_page };
 }
 
 module.exports = {
