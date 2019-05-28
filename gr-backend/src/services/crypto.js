@@ -4,7 +4,7 @@ const secret = 'abc';
 
 class Crypto {
 
-  static encrypt2(s) {
+  static encrypt(s) {
     const key = crypto.scryptSync(secret, 'salt', 32);
     const iv = Buffer.alloc(16, 0);
     const cipher = crypto.createCipheriv(algorithm, key, iv);
@@ -13,7 +13,7 @@ class Crypto {
     return encrypted;
   }
 
-  static decrypt2(s) {
+  static decrypt(s) {
     const key = crypto.scryptSync(secret, 'salt', 32);
     const iv = Buffer.alloc(16, 0);
     const decipher = crypto.createDecipheriv(algorithm, key, iv);
