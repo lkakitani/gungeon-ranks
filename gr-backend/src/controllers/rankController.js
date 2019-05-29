@@ -26,7 +26,7 @@ const castVote = async (req, res) => {
       .json({ error: 'invalid post' });
   }
 
-  Rating.computeVote(Crypto.decrypt(ballot));
+  Rating.computeVote(ballot);
   res.json({ status: 'ok' });
 }
 
