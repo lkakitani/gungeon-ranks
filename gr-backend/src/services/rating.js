@@ -1,6 +1,8 @@
 const Crypto = require('../services/crypto');
 const Passive = require('../models/Passive');
 const PassiveResult = require('../models/PassiveResult');
+const EloRank = require('elo-rank');
+const elo = new EloRank(32);
 
 class Rating {
 
@@ -18,7 +20,6 @@ class Rating {
       // compute vote, calculate ratings
       const chosenItem = await Passive.findByPk(chosenId);
       const otherItem = await Passive.findByPk(otherId);
-      console.log('chosenItem: ' + chosenItem);
 
       await PassiveResult
         .build({
@@ -27,7 +28,19 @@ class Rating {
           unique_vote: ballot,
         })
         .save();
-      console.log('vote computed');
+
+      const { winnerElo, loserElo } = this.calculateElo({
+        scoreWinner: chosenItem.elo_rating,
+        scoreLoser: otherItem.elo_rating
+      });
+
+      chosenItem.elo_rating = winnerElo;
+      otherItem.elo_rating = loserElo;
+
+      await chosenItem.save();
+      await otherItem.save();
+
+      console.log('vote computed successfully');
     } catch (e) {
       console.error(`vote not computed - ${e.message}`);
       return;
@@ -38,6 +51,16 @@ class Rating {
   static getBallotInfo(ballot) {
     const vote = Crypto.decrypt(ballot);
     return vote.split('::');
+  }
+
+  static calculateElo(scores) {
+    const { scoreWinner, scoreLoser } = scores;
+    const expectedScoreWinner = elo.getExpected(scoreWinner, scoreLoser);
+    const expectedScoreLoser = elo.getExpected(scoreLoser, scoreWinner);
+    return {
+      winnerElo: elo.updateRating(expectedScoreWinner, 1, scoreWinner),
+      loserElo: elo.updateRating(expectedScoreLoser, 0, scoreLoser)
+    };
   }
 }
 

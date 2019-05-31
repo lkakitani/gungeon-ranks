@@ -14,8 +14,8 @@ CREATE TABLE guns (
  quote VARCHAR(255),
  quality varchar(5),
  wiki_page varchar(400),
- boss_rating numeric (10,4),
- room_rating numeric (10,4),
+ boss_rating integer,
+ room_rating integer,
  vote_count integer DEFAULT 0
 );
 
@@ -28,7 +28,7 @@ CREATE TABLE passives (
  quote VARCHAR(255),
  quality varchar(5),
  wiki_page varchar(400),
- elo_rating numeric (10,4),
+ elo_rating integer,
  vote_count integer DEFAULT 0
 );
 
@@ -41,7 +41,7 @@ CREATE TABLE actives (
  quote VARCHAR(255),
  quality varchar(5),
  wiki_page varchar(400),
- elo_rating numeric (10,4),
+ elo_rating integer,
  vote_count integer DEFAULT 0
 );
 
