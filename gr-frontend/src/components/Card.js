@@ -4,8 +4,8 @@ export const Card = props => {
   return (
     <div className="ui card">
       <div className="content">
-        <div className="header">{props.itemName}</div>
-        <div className="meta">{props.itemQuote}</div>
+        <div className="header">{props.item.name}</div>
+        <div className="meta">{props.item.quote}</div>
         <div className="description">
           Elliot Fu is a film-maker from New York.
         </div>
