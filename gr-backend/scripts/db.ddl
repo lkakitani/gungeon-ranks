@@ -48,29 +48,26 @@ CREATE TABLE actives (
 CREATE TABLE guns_results (
  id serial PRIMARY KEY,
  created_at timestamp NOT NULL,
- left_item_id integer REFERENCES guns(id) NOT NULL,
- right_item_id integer REFERENCES guns(id) NOT NULL,
- winner_id integer REFERENCES guns(id) NOT NULL,
- loser_id integer REFERENCES guns(id) NOT NULL,
+ updated_at timestamp NOT NULL,
+ winner_id integer,
+ loser_id integer,
  unique_vote varchar(300) UNIQUE NOT NULL
 );
 
 CREATE TABLE passives_results (
  id serial PRIMARY KEY,
  created_at timestamp NOT NULL,
- left_item_id integer REFERENCES passives(id) NOT NULL,
- right_item_id integer REFERENCES passives(id) NOT NULL,
- winner_id integer REFERENCES passives(id) NOT NULL,
- loser_id integer REFERENCES passives(id) NOT NULL,
+ updated_at timestamp NOT NULL,
+ winner_id integer,
+ loser_id integer,
  unique_vote varchar(300) UNIQUE NOT NULL
 );
 
 CREATE TABLE actives_results (
  id serial PRIMARY KEY,
  created_at timestamp NOT NULL,
- left_item_id integer REFERENCES actives(id) NOT NULL,
- right_item_id integer REFERENCES actives(id) NOT NULL,
- winner_id integer REFERENCES actives(id) NOT NULL,
- loser_id integer REFERENCES actives(id) NOT NULL,
+ updated_at timestamp NOT NULL,
+ winner_id integer,
+ loser_id integer,
  unique_vote varchar(300) UNIQUE NOT NULL
 );

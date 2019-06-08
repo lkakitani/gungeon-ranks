@@ -7,7 +7,8 @@ const Passive = db.define('passive', {
   quote: Sequelize.STRING,
   quality: Sequelize.STRING,
   wiki_page: Sequelize.STRING,
-  elo_rating: Sequelize.INTEGER
+  elo_rating: Sequelize.INTEGER,
+  vote_count: Sequelize.INTEGER
 });
 
 module.exports = Passive;

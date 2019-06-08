@@ -36,6 +36,8 @@ class Rating {
 
       chosenItem.elo_rating = winnerElo;
       otherItem.elo_rating = loserElo;
+      chosenItem.vote_count++;
+      otherItem.vote_count++;
 
       await chosenItem.save();
       await otherItem.save();

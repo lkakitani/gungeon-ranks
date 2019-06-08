@@ -8,7 +8,8 @@ const Gun = db.define('gun', {
   quality: Sequelize.STRING,
   wiki_page: Sequelize.STRING,
   boss_rating: Sequelize.INTEGER,
-  room_rating: Sequelize.INTEGER
+  room_rating: Sequelize.INTEGER,
+  vote_count: Sequelize.INTEGER
 });
 
 module.exports = Gun;
