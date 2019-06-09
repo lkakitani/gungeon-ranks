@@ -1,25 +1,25 @@
 import React from 'react';
 
-export const Card = props => {
-  return (
-    <div className="ui card">
-      <div className="content center aligned">
-        <div className="header">{props.item.name}</div>
-        {/* <div className="description">
-          Elliot Fu is a film-maker from New York.
-        </div> */}
-        <div className="img-card">
-          <img className="ui mini image" src={props.item.icon_path} alt={props.item.name}></img>
-        </div>
-        <div className="description">"{props.item.quote}"</div>
+export class Card extends React.Component {
 
+  render() {
+    return (
+      <div className="ui card">
+        <div className="content center aligned">
+          <div className="header">{this.props.item.name}</div>
+          <div className="img-card">
+            <img className="ui mini image" src={this.props.item.icon_path} alt={this.props.item.name}></img>
+          </div>
+          <div className="description">"{this.props.item.quote}"</div>
+
+        </div>
+        <div className="ui bottom attached button" onClick={this.props.onClick}>
+          Choose
+        </div>
       </div>
-      <div className="ui bottom attached button">
-        Choose
-      </div>
-    </div>
-  );
-};
+    );
+  };
+}
 
 export const RerollCard = () => {
   return (
