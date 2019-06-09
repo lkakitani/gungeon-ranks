@@ -24,7 +24,6 @@ export default class CardList extends React.Component {
   }
 
   async vote(ballot) {
-    console.log('teste: ' + ballot);
     // compute vote
     await axios.post('http://localhost:3030/vote', { ballot });
     // get new candidates
