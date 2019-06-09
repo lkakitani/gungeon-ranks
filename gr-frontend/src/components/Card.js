@@ -9,7 +9,7 @@ export const Card = props => {
           Elliot Fu is a film-maker from New York.
         </div> */}
         <div className="img-card">
-          <img class="ui mini image" src={props.item.icon_path} alt={props.item.name}></img>
+          <img className="ui mini image" src={props.item.icon_path} alt={props.item.name}></img>
         </div>
         <div className="description">"{props.item.quote}"</div>
 

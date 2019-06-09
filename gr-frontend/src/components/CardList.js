@@ -20,7 +20,6 @@ export default class CardList extends React.Component {
 
   async componentWillMount() {
     const res = await axios.get('http://localhost:3030/vote');
-    console.log(res);
     this.setState({ vote: res.data });
   }
 
