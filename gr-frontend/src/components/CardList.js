@@ -4,7 +4,18 @@ import { Card, RerollCard } from "../components/Card";
 
 export default class CardList extends React.Component {
   state = {
-    cards: []
+    vote: {
+      ballotLeft: '',
+      ballotRight: '',
+      left: {
+        name: 'Casey',
+        quote: 'nice'
+      },
+      right: {
+        name: 'rightItem',
+        quote: 'this is right'
+      }
+    }
   }
 
   async componentWillMount() {
@@ -29,7 +40,7 @@ export default class CardList extends React.Component {
 
         <div className="column">
           <div className="content">
-            <Card itemName="Pea Shooter" itemQuote="Baby's First Gun" />
+            <Card item={this.state.vote.right} />
           </div>
         </div>
 

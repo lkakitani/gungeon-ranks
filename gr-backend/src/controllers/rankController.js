@@ -3,10 +3,7 @@ const Crypto = require('../services/crypto');
 const Rating = require('../services/rating');
 
 const getOptions = async (req, res) => {
-  const voteOptions = await Passive.findAll({
-    limit: 2,
-    order: ['vote_count']
-  });
+  const voteOptions = await Passive.getCandidates();
   const left = voteOptions[0];
   const right = voteOptions[1];
 

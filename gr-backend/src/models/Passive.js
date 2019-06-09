@@ -11,4 +11,11 @@ const Passive = db.define('passive', {
   vote_count: Sequelize.INTEGER
 });
 
+Passive.getCandidates = function () {
+  return this.findAll({
+    limit: 2,
+    order: Sequelize.fn('RANDOM')
+  });
+}
+
 module.exports = Passive;
