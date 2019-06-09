@@ -7,7 +7,6 @@ const Home = () => {
     <div>
       <Segment title="Rank Items" />
       <CardList />
-
     </div>
   );
 

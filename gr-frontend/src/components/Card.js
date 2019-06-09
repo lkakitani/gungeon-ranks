@@ -21,7 +21,7 @@ export class Card extends React.Component {
   };
 }
 
-export const RerollCard = () => {
+export const RerollCard = (props) => {
   return (
     <div className="ui card">
       <div className="content center aligned">
@@ -30,7 +30,7 @@ export const RerollCard = () => {
           I don't know / can't decide
         </div>
       </div>
-      <div className="ui bottom attached button">
+      <div className="ui bottom attached button" onClick={props.onClick}>
         Reroll
       </div>
     </div>

@@ -8,28 +8,30 @@ export default class CardList extends React.Component {
       ballotLeft: '',
       ballotRight: '',
       left: {
-        name: 'Casey',
-        quote: 'nice'
+        name: '',
+        quote: ''
       },
       right: {
-        name: 'rightItem',
-        quote: 'this is right'
+        name: '',
+        quote: ''
       }
     }
   }
 
   async componentWillMount() {
-    const res = await axios.get('http://localhost:3030/vote');
-    this.setState({ vote: res.data });
+    this.reroll();
   }
 
   async vote(ballot) {
     // compute vote
     await axios.post('http://localhost:3030/vote', { ballot });
     // get new candidates
+    this.reroll();
+  }
+
+  async reroll() {
     const res = await axios.get('http://localhost:3030/vote');
     this.setState({ vote: res.data });
-
   }
 
   render() {
@@ -42,7 +44,7 @@ export default class CardList extends React.Component {
 
         <div className="column">
           <div className="content">
-            <RerollCard />
+            <RerollCard onClick={() => this.reroll()} />
           </div>
         </div>
 
