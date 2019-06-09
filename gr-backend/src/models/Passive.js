@@ -18,4 +18,10 @@ Passive.getCandidates = function () {
   });
 }
 
+Passive.getRankings = function () {
+  return this.findAll({
+    order: [['elo_rating', 'DESC']]
+  });
+}
+
 module.exports = Passive;

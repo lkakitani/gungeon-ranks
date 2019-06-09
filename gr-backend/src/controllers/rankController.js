@@ -27,6 +27,11 @@ const castVote = async (req, res) => {
   res.json({ status: 'ok' });
 }
 
+const getRanking = async (req, res) => {
+  const rankings = await Passive.getRankings();
+  res.json(rankings);
+}
+
 const buildBallot = (chosenOption, otherOption) => {
   const vote = `${chosenOption.id}::${otherOption.id}::${Date.now()}`;
   return Crypto.encrypt(vote);
@@ -38,5 +43,5 @@ const buildVoteInfo = (option) => {
 }
 
 module.exports = {
-  getOptions, castVote
+  getOptions, castVote, getRanking
 }
