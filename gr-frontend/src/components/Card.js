@@ -3,6 +3,7 @@ import React from 'react';
 export class Card extends React.Component {
 
   render() {
+    const dataHtml = `<div>Use <i class='caret square ${this.props.position} outline icon'></i> on keyboard to vote</div>`;
     return (
       <div className="ui card">
         <div className="content center aligned">
@@ -13,15 +14,16 @@ export class Card extends React.Component {
           <div className="description">"{this.props.item.quote}"</div>
 
         </div>
-        <div className="ui bottom attached button" onClick={this.props.onClick}>
+        <div className="ui bottom attached button card-button" onClick={this.props.onClick} data-html={dataHtml} data-position="bottom center" data-variation="inverted">
           Choose
         </div>
-      </div>
+      </div >
     );
   };
 }
 
 export const RerollCard = (props) => {
+  const dataHtml = `<div>Use <i class='caret square down outline icon'></i> on keyboard to reroll</div>`;
   return (
     <div className="ui card">
       <div className="content center aligned">
@@ -30,7 +32,7 @@ export const RerollCard = (props) => {
           I don't know / can't decide
         </div>
       </div>
-      <div className="ui bottom attached button" onClick={props.onClick}>
+      <div className="ui bottom attached button card-button" onClick={props.onClick} data-html={dataHtml} data-position="bottom center" data-variation="inverted">
         Reroll
       </div>
     </div>
