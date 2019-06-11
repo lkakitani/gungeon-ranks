@@ -18,7 +18,7 @@ export default class CardList extends React.Component {
     }
   }
 
-  async componentWillMount() {
+  async componentDidMount() {
     this.reroll();
   }
 
