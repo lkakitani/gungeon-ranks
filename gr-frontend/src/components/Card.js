@@ -17,7 +17,9 @@ export class Card extends React.Component {
           <div className="header">{this.props.item.name}</div>
           {quality}
           <div className="img-card">
-            <div className={`ui image bg-icon bg-${bgIconName}`}></div>
+            <a href={`https://enterthegungeon.gamepedia.com/${this.props.item.wiki_page}`} target="_blank" rel="noopener noreferrer">
+              <div className={`ui image bg-icon bg-${bgIconName}`}></div>
+            </a>
           </div>
           <div className="description">"{this.props.item.quote}"</div>
 

@@ -25,7 +25,9 @@ export default class RankingsTable extends React.Component {
       return <tr key={item.id}>
         <td className="center aligned">{index + 1}</td>
         <td className="center aligned" data-label="icon">
-          <div className={`ui image bg-icon bg-${bgIconName}`}></div>
+          <a href={`https://enterthegungeon.gamepedia.com/${item.wiki_page}`} target="_blank" rel="noopener noreferrer">
+            <div className={`ui image bg-icon bg-${bgIconName}`}></div>
+          </a>
         </td>
         <td data-label="Name">{item.name}</td>
         <td data-label="Quote">{item.quote}</td>

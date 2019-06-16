@@ -161,7 +161,7 @@ INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Box', 'Just A Box', 'A', 'Box', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Fortune''s Favor', 'Use For Luck', 'B', 'Fortune%27%27s_Favor', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Fortune''s Favor', 'Use For Luck', 'B', 'Fortune%27s_Favor', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Jar of Bees', 'The Pain!', 'C', 'Jar_of_Bees', 1200);
@@ -362,7 +362,7 @@ INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Lichy Trigger Finger', 'Rate of Fire Up', 'D', 'Lichy_Trigger_Finger', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Lich''s Eye Bullets', 'Iron Sights', 'S', 'Lich%27%27s_Eye_Bullets', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Lich''s Eye Bullets', 'Iron Sights', 'S', 'Lich%27s_Eye_Bullets', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Enraging Photo', 'Don''t Believe His Lies', 'D', 'Enraging_Photo', 1200);
@@ -383,7 +383,7 @@ INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Ring of the Resourceful Rat', 'Fufufufufufu', 'B', 'Ring_of_the_Resourceful_Rat', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Cartographer''s Ring', 'Some Floors Are Familiar', 'C', 'Cartographer%27%27s_Ring', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Cartographer''s Ring', 'Some Floors Are Familiar', 'C', 'Cartographer%27s_Ring', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Amulet of the Pit Lord', 'No Fall Damage', 'D', 'Amulet_of_the_Pit_Lord', 1200);
@@ -446,13 +446,13 @@ INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Gunknight Gauntlet', 'Armor Every Floor', 'C', 'Gunknight_Gauntlet', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Old Knight''s Shield', 'Heavy With Experience', 'N/A', 'Old_Knight%27%27s_Shield', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Old Knight''s Shield', 'Heavy With Experience', 'N/A', 'Old_Knight%27s_Shield', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Old Knight''s Helm', 'Protects Knowledge', 'N/A', 'Old_Knight%27%27s_Helm', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Old Knight''s Helm', 'Protects Knowledge', 'N/A', 'Old_Knight%27s_Helm', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Old Knight''s Flask', 'Heals Per Floor', 'A', 'Old_Knight%27%27s_Flask', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Old Knight''s Flask', 'Heals Per Floor', 'A', 'Old_Knight%27s_Flask', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Old Crest', 'Armor Up', 'N/A', 'Old_Crest', 1200);
@@ -668,10 +668,10 @@ INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Heart Purse', 'Form Begets Function', 'C,B,A', 'Heart_Purse', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Ruby Bracelet (Pre-Upgrade)', 'Thrown Guns Explode', 'D', 'Ruby_Bracelet_(Pre-Upgrade)', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Ruby Bracelet (Pre-Upgrade)', 'Thrown Guns Explode', 'D', 'Ruby_Bracelet', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Ruby Bracelet (Post-Upgrade)', 'Moving Forward', 'D', 'Ruby_Bracelet_(Post-Upgrade)', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Ruby Bracelet (Post-Upgrade)', 'Moving Forward', 'D', 'Ruby_Bracelet', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Sixth Chamber', 'Blessing Of Kaliber', 'A', 'Sixth_Chamber', 1200);
@@ -686,7 +686,7 @@ INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Heart of Ice', 'That''s Cold', 'C,B,A,S', 'Heart_of_Ice', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Ancient Hero''s Bandana', 'Limitless', 'S', 'Ancient_Hero%27%27s_Bandana', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Ancient Hero''s Bandana', 'Limitless', 'S', 'Ancient_Hero%27s_Bandana', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Bloodied Scarf', 'Blink Away', 'B', 'Bloodied_Scarf', 1200);
@@ -782,7 +782,7 @@ INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Briefcase of Cash', 'Avarice', 'A', 'Briefcase_of_Cash', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Blank Companion''s Ring', 'He Tries', 'A', 'Blank_Companion%27%27s_Ring', 1200);
+            VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Blank Companion''s Ring', 'He Tries', 'A', 'Blank_Companion%27s_Ring', 1200);
 
 INSERT INTO items (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
             VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Galactic Medal of Valor', 'Courage Increased', 'B', 'Galactic_Medal_of_Valor', 1200);
