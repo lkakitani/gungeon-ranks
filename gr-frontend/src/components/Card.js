@@ -9,7 +9,7 @@ export class Card extends React.Component {
     const quality = this.props.item.quality
       .replace('/', '')
       .split(',')
-      .map(q => <div className={`ui image bg-quality_${q}`}></div>);
+      .map(q => <div key={q} className={`ui image bg-quality_${q}`}></div>);
     const dataHtml = `<div>Use <i class='caret square ${this.props.position} outline icon'></i> on keyboard to vote</div>`;
     return (
       <div className="ui card">

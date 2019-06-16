@@ -14,18 +14,22 @@ export default class RankingsTable extends React.Component {
 
   render() {
     const ranks = this.state.ranks.map((item, index) => {
-      const bgClassName = item.name
+      const bgIconName = item.name
         .replace(/['|(|)|+]/g, '')
         .replace(/[ |-]/g, '_')
         .toLowerCase();
+      const quality = item.quality
+        .replace('/', '')
+        .split(',')
+        .map(q => <div key={q} className={`ui image bg-quality_${q}`}></div>);
       return <tr key={item.id}>
         <td className="center aligned">{index + 1}</td>
         <td className="center aligned" data-label="icon">
-          <div className={`ui image bg-icon bg-${bgClassName}`}></div>
+          <div className={`ui image bg-icon bg-${bgIconName}`}></div>
         </td>
         <td data-label="Name">{item.name}</td>
         <td data-label="Quote">{item.quote}</td>
-        <td className="center aligned" data-label="Quality">{item.quality}</td>
+        <td className="center aligned" data-label="Quality">{quality}</td>
         <td className="center aligned" data-label="EloRating">{item.elo_rating}</td>
       </tr>
     });
