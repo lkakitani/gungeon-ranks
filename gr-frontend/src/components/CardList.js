@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import { Axios } from '../services/axios';
 import { Card, RerollCard } from "../components/Card";
 
 export default class CardList extends React.Component {
@@ -14,14 +14,14 @@ export default class CardList extends React.Component {
 
   async vote(ballot) {
     // compute vote
-    await axios.post('http://localhost:3030/vote', { ballot });
+    await Axios.postBallot(ballot);
     // get new candidates
     this.reroll();
   }
 
   async reroll() {
     this.setState({ vote: this.cleanVote() });
-    const res = await axios.get('http://localhost:3030/vote');
+    const res = await Axios.getCandidates();
     this.setState({ vote: res.data });
   }
 
