@@ -1,11 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import { Home, Ranks, Changes } from './pages';
 
 
 class App extends React.Component {
-
-  state = { lat: undefined, errorMessage: '' };
 
   render() {
     return (
@@ -14,15 +12,15 @@ class App extends React.Component {
         <Router>
           <div className="ui inverted segment">
             <div className="ui inverted secondary menu">
-              <Link to="/" className="item active">
+              <NavLink to="/" className="item" activeClassName="active" exact="true">
                 Home
-              </Link>
-              <Link to="/ranks" className="item">
+              </NavLink>
+              <NavLink to="/ranks" className="item" activeClassName="active">
                 Ranks
-              </Link>
-              <Link to="/changes" className="item">
+              </NavLink>
+              <NavLink to="/changes" className="item" activeClassName="active">
                 News
-              </Link>
+              </NavLink>
             </div>
           </div>
           <Route path="/" exact component={Home} />
@@ -33,8 +31,6 @@ class App extends React.Component {
 
     );
   }
-
-  componentDidMount() { }
 
 }
 
