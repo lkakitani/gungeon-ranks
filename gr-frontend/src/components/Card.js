@@ -1,15 +1,18 @@
 import React from 'react';
 
 export class Card extends React.Component {
-
   render() {
+    const bgClassName = this.props.item.name
+      .replace(/['|(|)|+]/g, '')
+      .replace(/[ |-]/g, '_')
+      .toLowerCase();
     const dataHtml = `<div>Use <i class='caret square ${this.props.position} outline icon'></i> on keyboard to vote</div>`;
     return (
       <div className="ui card">
         <div className="content center aligned">
           <div className="header">{this.props.item.name}</div>
           <div className="img-card">
-            <img className="ui mini image" src={this.props.item.icon_path} alt={this.props.item.name}></img>
+            <div className={`ui image bg-icon bg-${bgClassName}`}></div>
           </div>
           <div className="description">"{this.props.item.quote}"</div>
 
