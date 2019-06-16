@@ -1,6 +1,6 @@
 const Crypto = require('../services/crypto');
-const Passive = require('../models/Passive');
-const PassiveResult = require('../models/PassiveResult');
+const Item = require('../models/Item');
+const ItemResult = require('../models/ItemResult');
 const EloRank = require('elo-rank');
 const elo = new EloRank(32);
 
@@ -18,10 +18,10 @@ class Rating {
       // other validations
 
       // compute vote, calculate ratings
-      const chosenItem = await Passive.findByPk(chosenId);
-      const otherItem = await Passive.findByPk(otherId);
+      const chosenItem = await Item.findByPk(chosenId);
+      const otherItem = await Item.findByPk(otherId);
 
-      await PassiveResult
+      await ItemResult
         .build({
           winner_id: chosenId,
           loser_id: otherId,

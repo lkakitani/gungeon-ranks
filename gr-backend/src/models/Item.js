@@ -1,9 +1,8 @@
 const Sequelize = require('sequelize');
 const db = require('../db');
 
-const Passive = db.define('passive', {
+const Item = db.define('item', {
   name: Sequelize.STRING,
-  icon_path: Sequelize.STRING,
   quote: Sequelize.STRING,
   quality: Sequelize.STRING,
   wiki_page: Sequelize.STRING,
@@ -11,17 +10,17 @@ const Passive = db.define('passive', {
   vote_count: Sequelize.INTEGER
 });
 
-Passive.getCandidates = function () {
+Item.getCandidates = function () {
   return this.findAll({
     limit: 2,
     order: Sequelize.fn('RANDOM')
   });
 }
 
-Passive.getRankings = function () {
+Item.getRankings = function () {
   return this.findAll({
     order: [['elo_rating', 'DESC']]
   });
 }
 
-module.exports = Passive;
+module.exports = Item;

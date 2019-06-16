@@ -1,9 +1,9 @@
-const Passive = require('../models/Passive');
+const Item = require('../models/Item');
 const Crypto = require('../services/crypto');
 const Rating = require('../services/rating');
 
 const getOptions = async (req, res) => {
-  const voteOptions = await Passive.getCandidates();
+  const voteOptions = await Item.getCandidates();
   const left = voteOptions[0];
   const right = voteOptions[1];
 
@@ -28,7 +28,7 @@ const castVote = async (req, res) => {
 }
 
 const getRanking = async (req, res) => {
-  const rankings = await Passive.getRankings();
+  const rankings = await Item.getRankings();
   res.json(rankings);
 }
 

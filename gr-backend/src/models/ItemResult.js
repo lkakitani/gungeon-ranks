@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db');
 
-const PassiveResult = db.define('passives_result', {
+const ItemResult = db.define('items_result', {
   left_item_id: Sequelize.INTEGER,
   right_item_id: Sequelize.INTEGER,
   winner_id: Sequelize.INTEGER,
@@ -9,4 +9,4 @@ const PassiveResult = db.define('passives_result', {
   unique_vote: Sequelize.STRING,
 });
 
-module.exports = PassiveResult;
+module.exports = ItemResult;
