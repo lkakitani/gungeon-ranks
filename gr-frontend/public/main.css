@@ -9,12 +9,7 @@
 
 .bg-1_bullets {
   width: 9px; height: 16px;
-  background: url('./items.png') -295px -76px;
-}
-
-.bg-alpha_bullet {
-  width: 9px; height: 16px;
-  background: url('./items.png') -295px -96px;
+  background: url('./items.png') -296px -241px;
 }
 
 .bg-ammo_belt {
@@ -24,7 +19,7 @@
 
 .bg-ammo_synthesizer {
   width: 11px; height: 14px;
-  background: url('./items.png') -295px -2px;
+  background: url('./items.png') -296px -167px;
 }
 
 .bg-amulet_of_the_pit_lord {
@@ -32,14 +27,89 @@
   background: url('./items.png') -107px -2px;
 }
 
+.bg-angry_bullets {
+  width: 9px; height: 13px;
+  background: url('./items.png') -32px -294px;
+}
+
+.bg-armor_synthesizer {
+  width: 11px; height: 12px;
+  background: url('./items.png') -225px -216px;
+}
+
+.bg-backup_gun {
+  width: 20px; height: 20px;
+  background: url('./items.png') -26px -95px;
+}
+
+.bg-ballistic_boots {
+  width: 14px; height: 15px;
+  background: url('./items.png') -278px -197px;
+}
+
+.bg-alpha_bullet {
+  width: 9px; height: 16px;
+  background: url('./items.png') -296px -261px;
+}
+
+.bg-blood_brooch {
+  width: 12px; height: 13px;
+  background: url('./items.png') -296px -82px;
+}
+
+.bg-blank_bullets {
+  width: 9px; height: 13px;
+  background: url('./items.png') -45px -294px;
+}
+
+.bg-bloody_eye {
+  width: 7px; height: 18px;
+  background: url('./items.png') -312px -156px;
+}
+
+.bg-blue_guon_stone {
+  width: 9px; height: 14px;
+  background: url('./items.png') -312px -200px;
+}
+
+.bg-blank_companions_ring {
+  width: 15px; height: 23px;
+  background: url('./items.png') -162px -94px;
+}
+
+.bg-book_of_chest_anatomy {
+  width: 15px; height: 16px;
+  background: url('./items.png') -40px -238px;
+}
+
+.bg-bouncy_bullets {
+  width: 9px; height: 13px;
+  background: url('./items.png') -58px -294px;
+}
+
+.bg-briefcase_of_cash {
+  width: 18px; height: 13px;
+  background: url('./items.png') -187px -194px;
+}
+
+.bg-brick_of_cash {
+  width: 13px; height: 11px;
+  background: url('./items.png') -150px -259px;
+}
+
+.bg-bug_boots {
+  width: 20px; height: 19px;
+  background: url('./items.png') -132px -40px;
+}
+
+.bg-broccoli {
+  width: 15px; height: 16px;
+  background: url('./items.png') -59px -238px;
+}
+
 .bg-ancient_heros_bandana {
   width: 26px; height: 15px;
   background: url('./items.png') -57px -69px;
-}
-
-.bg-angry_bullets {
-  width: 9px; height: 13px;
-  background: url('./items.png') -310px -155px;
 }
 
 .bg-antibody {
@@ -52,9 +122,9 @@
   background: url('./items.png') -182px -216px;
 }
 
-.bg-armor_synthesizer {
-  width: 11px; height: 12px;
-  background: url('./items.png') -225px -216px;
+.bg-baby_good_shelleton {
+  width: 12px; height: 14px;
+  background: url('./items.png') -188px -127px;
 }
 
 .bg-baby_good_mimic {
@@ -62,119 +132,9 @@
   background: url('./items.png') -65px -216px;
 }
 
-.bg-baby_good_shelleton {
-  width: 12px; height: 14px;
-  background: url('./items.png') -278px -173px;
-}
-
-.bg-backpack {
-  width: 17px; height: 14px;
-  background: url('./items.png') -166px -194px;
-}
-
-.bg-backup_gun {
-  width: 20px; height: 20px;
-  background: url('./items.png') -26px -95px;
-}
-
 .bg-badge {
   width: 11px; height: 12px;
-  background: url('./items.png') -82px -277px;
-}
-
-.bg-ballistic_boots {
-  width: 14px; height: 15px;
-  background: url('./items.png') -97px -238px;
-}
-
-.bg-ballot {
-  width: 14px; height: 17px;
-  background: url('./items.png') -260px -93px;
-}
-
-.bg-battery_bullets {
-  width: 9px; height: 15px;
-  background: url('./items.png') -295px -210px;
-}
-
-.bg-battle_standard {
-  width: 12px; height: 27px;
-  background: url('./items.png') -188px -34px;
-}
-
-.bg-bionic_leg {
-  width: 10px; height: 15px;
-  background: url('./items.png') -295px -38px;
-}
-
-.bg-blank_bullets {
-  width: 9px; height: 13px;
-  background: url('./items.png') -310px -172px;
-}
-
-.bg-blank_companions_ring {
-  width: 15px; height: 23px;
-  background: url('./items.png') -162px -94px;
-}
-
-.bg-blast_helmet {
-  width: 15px; height: 14px;
-  background: url('./items.png') -115px -238px;
-}
-
-.bg-blood_brooch {
-  width: 12px; height: 13px;
-  background: url('./items.png') -188px -149px;
-}
-
-.bg-bloodied_scarf {
-  width: 26px; height: 15px;
-  background: url('./items.png') -132px -2px;
-}
-
-.bg-bloody_9mm {
-  width: 11px; height: 18px;
-  background: url('./items.png') -223px -155px;
-}
-
-.bg-bloody_eye {
-  width: 7px; height: 18px;
-  background: url('./items.png') -310px -21px;
-}
-
-.bg-blue_guon_stone {
-  width: 9px; height: 14px;
-  background: url('./items.png') -310px -65px;
-}
-
-.bg-book_of_chest_anatomy {
-  width: 15px; height: 16px;
-  background: url('./items.png') -40px -238px;
-}
-
-.bg-bouncy_bullets {
-  width: 9px; height: 13px;
-  background: url('./items.png') -310px -189px;
-}
-
-.bg-brick_of_cash {
-  width: 13px; height: 11px;
-  background: url('./items.png') -132px -259px;
-}
-
-.bg-briefcase_of_cash {
-  width: 18px; height: 13px;
-  background: url('./items.png') -187px -194px;
-}
-
-.bg-broccoli {
-  width: 15px; height: 16px;
-  background: url('./items.png') -59px -238px;
-}
-
-.bg-bug_boots {
-  width: 20px; height: 19px;
-  background: url('./items.png') -132px -40px;
+  background: url('./items.png') -69px -277px;
 }
 
 .bg-bullet_idol {
@@ -182,19 +142,9 @@
   background: url('./items.png') -260px -2px;
 }
 
-.bg-bumbullets {
-  width: 13px; height: 19px;
-  background: url('./items.png') -260px -46px;
-}
-
-.bg-cartographers_ring {
-  width: 15px; height: 22px;
-  background: url('./items.png') -204px -2px;
-}
-
-.bg-cat_bullet_king_throne {
-  width: 17px; height: 25px;
-  background: url('./items.png') -83px -31px;
+.bg-chaos_ammolet {
+  width: 22px; height: 17px;
+  background: url('./items.png') -24px -120px;
 }
 
 .bg-chance_bullets {
@@ -202,9 +152,9 @@
   background: url('./items.png') -223px -2px;
 }
 
-.bg-chaos_ammolet {
-  width: 22px; height: 17px;
-  background: url('./items.png') -24px -120px;
+.bg-chicken_flute {
+  width: 15px; height: 10px;
+  background: url('./items.png') -223px -238px;
 }
 
 .bg-chaos_bullets {
@@ -214,22 +164,22 @@
 
 .bg-charming_rounds {
   width: 9px; height: 16px;
-  background: url('./items.png') -295px -116px;
+  background: url('./items.png') -174px -145px;
 }
 
-.bg-chicken_flute {
-  width: 15px; height: 10px;
-  background: url('./items.png') -241px -238px;
+.bg-ballot {
+  width: 14px; height: 17px;
+  background: url('./items.png') -260px -225px;
+}
+
+.bg-cartographers_ring {
+  width: 15px; height: 22px;
+  background: url('./items.png') -204px -2px;
 }
 
 .bg-clear_guon_stone {
   width: 9px; height: 14px;
-  background: url('./items.png') -310px -83px;
-}
-
-.bg-clone {
-  width: 13px; height: 18px;
-  background: url('./items.png') -260px -160px;
+  background: url('./items.png') -312px -218px;
 }
 
 .bg-cloranthy_ring {
@@ -237,54 +187,54 @@
   background: url('./items.png') -87px -216px;
 }
 
-.bg-clown_mask {
-  width: 15px; height: 14px;
-  background: url('./items.png') -134px -238px;
-}
-
 .bg-cog_of_battle {
   width: 15px; height: 15px;
   background: url('./items.png') -106px -216px;
 }
 
-.bg-coin_crown {
-  width: 20px; height: 21px;
-  background: url('./items.png') -2px -95px;
-}
-
-.bg-copper_ammolet {
-  width: 22px; height: 17px;
-  background: url('./items.png') -50px -120px;
-}
-
-.bg-crisis_stone {
-  width: 16px; height: 16px;
-  background: url('./items.png') -240px -136px;
-}
-
-.bg-crutch {
-  width: 9px; height: 18px;
-  background: url('./items.png') -278px -245px;
+.bg-backpack {
+  width: 17px; height: 14px;
+  background: url('./items.png') -166px -194px;
 }
 
 .bg-cursed_bullets {
   width: 9px; height: 15px;
-  background: url('./items.png') -295px -229px;
+  background: url('./items.png') -312px -42px;
 }
 
-.bg-devolver_rounds {
-  width: 9px; height: 15px;
-  background: url('./items.png') -295px -248px;
+.bg-clown_mask {
+  width: 15px; height: 14px;
+  background: url('./items.png') -97px -238px;
+}
+
+.bg-blast_helmet {
+  width: 15px; height: 14px;
+  background: url('./items.png') -116px -238px;
+}
+
+.bg-bionic_leg {
+  width: 10px; height: 15px;
+  background: url('./items.png') -296px -203px;
 }
 
 .bg-disarming_personality {
   width: 14px; height: 12px;
-  background: url('./items.png') -260px -243px;
+  background: url('./items.png') -95px -259px;
 }
 
-.bg-dog {
-  width: 14px; height: 14px;
-  background: url('./items.png') -2px -259px;
+.bg-bloody_9mm {
+  width: 11px; height: 18px;
+  background: url('./items.png') -223px -49px;
+}
+
+.bg-bloodied_scarf {
+  width: 26px; height: 15px;
+  background: url('./items.png') -132px -2px;
+}
+
+.bg-battle_standard {
+  width: 12px; height: 27px;
+  background: url('./items.png') -188px -34px;
 }
 
 .bg-drum_clip {
@@ -294,52 +244,27 @@
 
 .bg-easy_reload_bullets {
   width: 9px; height: 15px;
-  background: url('./items.png') -295px -267px;
-}
-
-.bg-enraging_photo {
-  width: 16px; height: 16px;
-  background: url('./items.png') -240px -156px;
+  background: url('./items.png') -312px -61px;
 }
 
 .bg-explosive_rounds {
   width: 9px; height: 15px;
-  background: url('./items.png') -174px -145px;
+  background: url('./items.png') -312px -80px;
 }
 
-.bg-eyepatch {
-  width: 14px; height: 11px;
-  background: url('./items.png') -114px -259px;
+.bg-crisis_stone {
+  width: 16px; height: 16px;
+  background: url('./items.png') -240px -136px;
 }
 
-.bg-fat_bullets {
-  width: 11px; height: 13px;
-  background: url('./items.png') -295px -176px;
-}
-
-.bg-flak_bullets {
-  width: 11px; height: 16px;
-  background: url('./items.png') -278px -82px;
-}
-
-.bg-frost_ammolet {
-  width: 22px; height: 17px;
-  background: url('./items.png') -76px -120px;
-}
-
-.bg-frost_bullets {
-  width: 9px; height: 13px;
-  background: url('./items.png') -310px -206px;
-}
-
-.bg-full_metal_jacket {
-  width: 16px; height: 18px;
-  background: url('./items.png') -2px -216px;
+.bg-battery_bullets {
+  width: 9px; height: 15px;
+  background: url('./items.png') -312px -99px;
 }
 
 .bg-galactic_medal_of_valor {
   width: 18px; height: 11px;
-  background: url('./items.png') -174px -238px;
+  background: url('./items.png') -156px -238px;
 }
 
 .bg-gas_mask {
@@ -349,7 +274,7 @@
 
 .bg-ghost_bullets {
   width: 9px; height: 13px;
-  background: url('./items.png') -310px -223px;
+  background: url('./items.png') -71px -294px;
 }
 
 .bg-gilded_bullets {
@@ -359,22 +284,27 @@
 
 .bg-glass_guon_stone {
   width: 9px; height: 13px;
-  background: url('./items.png') -310px -240px;
-}
-
-.bg-gold_ammolet {
-  width: 22px; height: 17px;
-  background: url('./items.png') -102px -120px;
+  background: url('./items.png') -84px -294px;
 }
 
 .bg-gold_junk {
   width: 12px; height: 13px;
-  background: url('./items.png') -2px -277px;
+  background: url('./items.png') -296px -99px;
+}
+
+.bg-dog {
+  width: 14px; height: 14px;
+  background: url('./items.png') -2px -259px;
+}
+
+.bg-copper_ammolet {
+  width: 22px; height: 17px;
+  background: url('./items.png') -50px -120px;
 }
 
 .bg-green_guon_stone {
   width: 9px; height: 14px;
-  background: url('./items.png') -310px -101px;
+  background: url('./items.png') -312px -236px;
 }
 
 .bg-gunboots {
@@ -382,9 +312,14 @@
   background: url('./items.png') -50px -95px;
 }
 
+.bg-gold_ammolet {
+  width: 22px; height: 17px;
+  background: url('./items.png') -76px -120px;
+}
+
 .bg-gundromeda_strain {
   width: 12px; height: 20px;
-  background: url('./items.png') -260px -69px;
+  background: url('./items.png') -260px -201px;
 }
 
 .bg-gungeon_blueprint {
@@ -394,7 +329,22 @@
 
 .bg-gungeon_pepper {
   width: 8px; height: 11px;
-  background: url('./items.png') -123px -277px;
+  background: url('./items.png') -110px -277px;
+}
+
+.bg-frost_bullets {
+  width: 9px; height: 13px;
+  background: url('./items.png') -97px -294px;
+}
+
+.bg-fat_bullets {
+  width: 11px; height: 13px;
+  background: url('./items.png') -2px -294px;
+}
+
+.bg-flak_bullets {
+  width: 11px; height: 16px;
+  background: url('./items.png') -223px -176px;
 }
 
 .bg-gunknight_armor {
@@ -402,34 +352,44 @@
   background: url('./items.png') -94px -194px;
 }
 
+.bg-full_metal_jacket {
+  width: 16px; height: 18px;
+  background: url('./items.png') -2px -216px;
+}
+
+.bg-gun_soul {
+  width: 14px; height: 16px;
+  background: url('./items.png') -278px -70px;
+}
+
+.bg-enraging_photo {
+  width: 16px; height: 16px;
+  background: url('./items.png') -240px -156px;
+}
+
+.bg-eyepatch {
+  width: 14px; height: 11px;
+  background: url('./items.png') -132px -259px;
+}
+
 .bg-gunknight_gauntlet {
   width: 18px; height: 16px;
   background: url('./items.png') -22px -216px;
 }
 
+.bg-frost_ammolet {
+  width: 22px; height: 17px;
+  background: url('./items.png') -102px -120px;
+}
+
 .bg-gunknight_greaves {
   width: 12px; height: 18px;
-  background: url('./items.png') -223px -28px;
-}
-
-.bg-gunknight_helmet {
-  width: 14px; height: 19px;
-  background: url('./items.png') -240px -89px;
-}
-
-.bg-gun_soul {
-  width: 14px; height: 16px;
-  background: url('./items.png') -260px -182px;
+  background: url('./items.png') -278px -131px;
 }
 
 .bg-hazmat_suit {
   width: 12px; height: 11px;
-  background: url('./items.png') -149px -259px;
-}
-
-.bg-heart_bottle {
-  width: 20px; height: 15px;
-  background: url('./items.png') -118px -194px;
+  background: url('./items.png') -167px -259px;
 }
 
 .bg-heart_holster {
@@ -437,14 +397,14 @@
   background: url('./items.png') -24px -2px;
 }
 
+.bg-heart_bottle {
+  width: 20px; height: 15px;
+  background: url('./items.png') -118px -194px;
+}
+
 .bg-heart_locket {
   width: 19px; height: 23px;
   background: url('./items.png') -107px -57px;
-}
-
-.bg-heart_lunchbox {
-  width: 18px; height: 18px;
-  background: url('./items.png') -2px -194px;
 }
 
 .bg-heart_of_ice {
@@ -452,34 +412,19 @@
   background: url('./items.png') -78px -238px;
 }
 
+.bg-heart_lunchbox {
+  width: 18px; height: 18px;
+  background: url('./items.png') -2px -194px;
+}
+
 .bg-heart_purse {
   width: 20px; height: 25px;
   background: url('./items.png') -83px -2px;
 }
 
-.bg-heart_synthesizer {
-  width: 15px; height: 13px;
-  background: url('./items.png') -38px -259px;
-}
-
-.bg-heavy_boots {
-  width: 20px; height: 18px;
-  background: url('./items.png') -162px -51px;
-}
-
-.bg-heavy_bullets {
-  width: 9px; height: 13px;
-  background: url('./items.png') -310px -257px;
-}
-
 .bg-helix_bullets {
   width: 13px; height: 16px;
-  background: url('./items.png') -223px -94px;
-}
-
-.bg-hidden_compartment {
-  width: 10px; height: 15px;
-  background: url('./items.png') -295px -57px;
+  background: url('./items.png') -278px -216px;
 }
 
 .bg-hip_holster {
@@ -487,9 +432,9 @@
   background: url('./items.png') -28px -69px;
 }
 
-.bg-homing_bullets {
-  width: 11px; height: 13px;
-  background: url('./items.png') -295px -193px;
+.bg-hidden_compartment {
+  width: 10px; height: 15px;
+  background: url('./items.png') -296px -222px;
 }
 
 .bg-holey_grail {
@@ -497,24 +442,34 @@
   background: url('./items.png') -204px -28px;
 }
 
+.bg-homing_bullets {
+  width: 11px; height: 13px;
+  background: url('./items.png') -17px -294px;
+}
+
 .bg-honeycomb {
   width: 13px; height: 14px;
-  background: url('./items.png') -278px -64px;
+  background: url('./items.png') -223px -158px;
 }
 
 .bg-hot_lead {
   width: 9px; height: 13px;
-  background: url('./items.png') -310px -274px;
+  background: url('./items.png') -110px -294px;
 }
 
-.bg-hungry_bullets {
-  width: 14px; height: 18px;
-  background: url('./items.png') -260px -24px;
+.bg-heavy_boots {
+  width: 20px; height: 18px;
+  background: url('./items.png') -162px -51px;
 }
 
 .bg-ice_cube {
   width: 9px; height: 11px;
-  background: url('./items.png') -110px -277px;
+  background: url('./items.png') -97px -277px;
+}
+
+.bg-irradiated_lead {
+  width: 9px; height: 13px;
+  background: url('./items.png') -123px -294px;
 }
 
 .bg-infuriating_note {
@@ -522,24 +477,19 @@
   background: url('./items.png') -132px -63px;
 }
 
-.bg-irradiated_lead {
-  width: 9px; height: 13px;
-  background: url('./items.png') -2px -294px;
-}
-
 .bg-junk {
   width: 12px; height: 13px;
-  background: url('./items.png') -18px -277px;
+  background: url('./items.png') -296px -116px;
 }
 
 .bg-katana_bullets {
   width: 11px; height: 21px;
-  background: url('./items.png') -260px -135px;
+  background: url('./items.png') -278px -23px;
 }
 
 .bg-laser_sight {
   width: 11px; height: 11px;
-  background: url('./items.png') -165px -259px;
+  background: url('./items.png') -183px -259px;
 }
 
 .bg-lichs_eye_bullets {
@@ -549,17 +499,17 @@
 
 .bg-lichy_trigger_finger {
   width: 18px; height: 10px;
-  background: url('./items.png') -219px -238px;
+  background: url('./items.png') -201px -238px;
 }
 
 .bg-lies {
   width: 12px; height: 13px;
-  background: url('./items.png') -34px -277px;
+  background: url('./items.png') -296px -133px;
 }
 
 .bg-liquid_valkyrie {
   width: 7px; height: 18px;
-  background: url('./items.png') -310px -43px;
+  background: url('./items.png') -312px -178px;
 }
 
 .bg-live_ammo {
@@ -584,12 +534,7 @@
 
 .bg-magic_bullets {
   width: 11px; height: 16px;
-  background: url('./items.png') -278px -102px;
-}
-
-.bg-magic_sweet {
-  width: 13px; height: 13px;
-  background: url('./items.png') -278px -122px;
+  background: url('./items.png') -223px -196px;
 }
 
 .bg-map {
@@ -597,9 +542,14 @@
   background: url('./items.png') -27px -39px;
 }
 
+.bg-master_round_ii {
+  width: 12px; height: 28px;
+  background: url('./items.png') -188px -2px;
+}
+
 .bg-master_of_unlocking {
   width: 19px; height: 10px;
-  background: url('./items.png') -196px -238px;
+  background: url('./items.png') -178px -238px;
 }
 
 .bg-master_round_i {
@@ -607,19 +557,14 @@
   background: url('./items.png') -204px -110px;
 }
 
-.bg-master_round_ii {
-  width: 12px; height: 28px;
-  background: url('./items.png') -188px -2px;
-}
-
-.bg-master_round_iii {
+.bg-master_round_iv {
   width: 12px; height: 27px;
   background: url('./items.png') -188px -65px;
 }
 
-.bg-master_round_iv {
-  width: 12px; height: 27px;
-  background: url('./items.png') -188px -96px;
+.bg-metronome {
+  width: 10px; height: 9px;
+  background: url('./items.png') -296px -281px;
 }
 
 .bg-master_round_v {
@@ -627,14 +572,9 @@
   background: url('./items.png') -2px -2px;
 }
 
-.bg-metronome {
-  width: 10px; height: 9px;
-  background: url('./items.png') -116px -172px;
-}
-
 .bg-military_training {
   width: 12px; height: 14px;
-  background: url('./items.png') -278px -191px;
+  background: url('./items.png') -188px -145px;
 }
 
 .bg-mimic_tooth_necklace {
@@ -649,17 +589,22 @@
 
 .bg-muscle_relaxant {
   width: 12px; height: 12px;
-  background: url('./items.png') -66px -277px;
+  background: url('./items.png') -53px -277px;
 }
 
 .bg-mustache {
   width: 13px; height: 5px;
-  background: url('./items.png') -278px -267px;
+  background: url('./items.png') -132px -109px;
+}
+
+.bg-heart_synthesizer {
+  width: 15px; height: 13px;
+  background: url('./items.png') -38px -259px;
 }
 
 .bg-nanomachines {
   width: 15px; height: 11px;
-  background: url('./items.png') -95px -259px;
+  background: url('./items.png') -113px -259px;
 }
 
 .bg-number_2 {
@@ -677,39 +622,34 @@
   background: url('./items.png') -240px -176px;
 }
 
-.bg-old_crest {
-  width: 14px; height: 16px;
-  background: url('./items.png') -260px -202px;
-}
-
 .bg-old_knights_helm {
   width: 17px; height: 12px;
-  background: url('./items.png') -153px -238px;
+  background: url('./items.png') -135px -238px;
 }
 
-.bg-old_knights_shield {
-  width: 11px; height: 14px;
-  background: url('./items.png') -295px -20px;
+.bg-old_crest {
+  width: 14px; height: 16px;
+  background: url('./items.png') -278px -90px;
 }
 
 .bg-omega_bullets {
   width: 9px; height: 16px;
-  background: url('./items.png') -295px -136px;
+  background: url('./items.png') -312px -2px;
 }
 
 .bg-orange_guon_stone {
   width: 9px; height: 18px;
-  background: url('./items.png') -188px -127px;
-}
-
-.bg-orbital_bullets {
-  width: 20px; height: 14px;
-  background: url('./items.png') -142px -194px;
+  background: url('./items.png') -296px -38px;
 }
 
 .bg-owl {
   width: 17px; height: 16px;
   background: url('./items.png') -44px -216px;
+}
+
+.bg-orbital_bullets {
+  width: 20px; height: 14px;
+  background: url('./items.png') -142px -194px;
 }
 
 .bg-pig {
@@ -729,12 +669,102 @@
 
 .bg-platinum_bullets {
   width: 12px; height: 17px;
-  background: url('./items.png') -223px -134px;
+  background: url('./items.png') -223px -28px;
 }
 
 .bg-prime_primer {
   width: 12px; height: 14px;
-  background: url('./items.png') -278px -209px;
+  background: url('./items.png') -296px -2px;
+}
+
+.bg-quality_A {
+  width: 14px; height: 18px;
+  background: url('./items.png') -260px -24px;
+}
+
+.bg-quality_B {
+  width: 14px; height: 18px;
+  background: url('./items.png') -260px -46px;
+}
+
+.bg-quality_C {
+  width: 14px; height: 18px;
+  background: url('./items.png') -260px -68px;
+}
+
+.bg-bumbullets {
+  width: 13px; height: 19px;
+  background: url('./items.png') -260px -178px;
+}
+
+.bg-cat_bullet_king_throne {
+  width: 17px; height: 25px;
+  background: url('./items.png') -83px -31px;
+}
+
+.bg-clone {
+  width: 13px; height: 18px;
+  background: url('./items.png') -278px -48px;
+}
+
+.bg-devolver_rounds {
+  width: 9px; height: 15px;
+  background: url('./items.png') -312px -118px;
+}
+
+.bg-crutch {
+  width: 9px; height: 18px;
+  background: url('./items.png') -296px -60px;
+}
+
+.bg-coin_crown {
+  width: 20px; height: 21px;
+  background: url('./items.png') -2px -95px;
+}
+
+.bg-gunknight_helmet {
+  width: 14px; height: 19px;
+  background: url('./items.png') -240px -89px;
+}
+
+.bg-magic_sweet {
+  width: 13px; height: 13px;
+  background: url('./items.png') -2px -277px;
+}
+
+.bg-master_round_iii {
+  width: 12px; height: 27px;
+  background: url('./items.png') -188px -96px;
+}
+
+.bg-old_knights_shield {
+  width: 11px; height: 14px;
+  background: url('./items.png') -296px -185px;
+}
+
+.bg-hungry_bullets {
+  width: 14px; height: 18px;
+  background: url('./items.png') -260px -90px;
+}
+
+.bg-heavy_bullets {
+  width: 9px; height: 13px;
+  background: url('./items.png') -136px -294px;
+}
+
+.bg-quality_S {
+  width: 14px; height: 18px;
+  background: url('./items.png') -260px -112px;
+}
+
+.bg-quality_NA {
+  width: 14px; height: 18px;
+  background: url('./items.png') -260px -134px;
+}
+
+.bg-quality_D {
+  width: 14px; height: 18px;
+  background: url('./items.png') -260px -156px;
 }
 
 .bg-r2g2 {
@@ -749,17 +779,12 @@
 
 .bg-red_guon_stone {
   width: 9px; height: 14px;
-  background: url('./items.png') -310px -119px;
+  background: url('./items.png') -312px -254px;
 }
 
 .bg-remote_bullets {
   width: 9px; height: 21px;
-  background: url('./items.png') -223px -177px;
-}
-
-.bg-riddle_of_lead {
-  width: 12px; height: 18px;
-  background: url('./items.png') -223px -50px;
+  background: url('./items.png') -223px -71px;
 }
 
 .bg-ring_of_chest_friendship {
@@ -767,19 +792,24 @@
   background: url('./items.png') -204px -54px;
 }
 
+.bg-riddle_of_lead {
+  width: 12px; height: 18px;
+  background: url('./items.png') -278px -153px;
+}
+
 .bg-ring_of_chest_vampirism {
   width: 15px; height: 24px;
   background: url('./items.png') -162px -23px;
 }
 
-.bg-ring_of_fire_resistance {
-  width: 15px; height: 21px;
-  background: url('./items.png') -204px -140px;
-}
-
 .bg-ring_of_mimic_friendship {
   width: 15px; height: 23px;
   background: url('./items.png') -2px -145px;
+}
+
+.bg-ring_of_fire_resistance {
+  width: 15px; height: 21px;
+  background: url('./items.png') -204px -140px;
 }
 
 .bg-ring_of_miserly_protection {
@@ -799,7 +829,7 @@
 
 .bg-rocket_powered_bullets {
   width: 13px; height: 15px;
-  background: url('./items.png') -278px -2px;
+  background: url('./items.png') -223px -96px;
 }
 
 .bg-roll_bomb {
@@ -824,7 +854,7 @@
 
 .bg-scattershot {
   width: 9px; height: 13px;
-  background: url('./items.png') -15px -294px;
+  background: url('./items.png') -149px -294px;
 }
 
 .bg-scope {
@@ -839,17 +869,17 @@
 
 .bg-ser_junkan {
   width: 12px; height: 13px;
-  background: url('./items.png') -50px -277px;
+  background: url('./items.png') -296px -150px;
 }
 
 .bg-seven_leaf_clover {
   width: 13px; height: 15px;
-  background: url('./items.png') -278px -21px;
+  background: url('./items.png') -223px -115px;
 }
 
 .bg-shadow_bullets {
   width: 9px; height: 16px;
-  background: url('./items.png') -295px -156px;
+  background: url('./items.png') -312px -22px;
 }
 
 .bg-shelleton_key {
@@ -859,22 +889,22 @@
 
 .bg-shock_rounds {
   width: 9px; height: 13px;
-  background: url('./items.png') -28px -294px;
+  background: url('./items.png') -162px -294px;
 }
 
 .bg-shotga_cola {
   width: 9px; height: 15px;
-  background: url('./items.png') -310px -2px;
+  background: url('./items.png') -312px -137px;
 }
 
 .bg-shotgun_coffee {
   width: 12px; height: 10px;
-  background: url('./items.png') -223px -202px;
+  background: url('./items.png') -242px -238px;
 }
 
 .bg-silver_bullets {
   width: 9px; height: 20px;
-  background: url('./items.png') -278px -40px;
+  background: url('./items.png') -223px -134px;
 }
 
 .bg-sixth_chamber {
@@ -884,17 +914,17 @@
 
 .bg-snowballets {
   width: 13px; height: 17px;
-  background: url('./items.png') -260px -222px;
+  background: url('./items.png') -278px -110px;
 }
 
 .bg-space_friend {
   width: 14px; height: 17px;
-  background: url('./items.png') -260px -114px;
+  background: url('./items.png') -278px -2px;
 }
 
 .bg-sponge {
   width: 13px; height: 16px;
-  background: url('./items.png') -223px -114px;
+  background: url('./items.png') -278px -236px;
 }
 
 .bg-springheel_boots {
@@ -904,12 +934,12 @@
 
 .bg-sprun {
   width: 10px; height: 10px;
-  background: url('./items.png') -180px -259px;
+  background: url('./items.png') -198px -259px;
 }
 
 .bg-stout_bullets {
   width: 12px; height: 14px;
-  background: url('./items.png') -278px -227px;
+  background: url('./items.png') -296px -20px;
 }
 
 .bg-sunglasses {
@@ -924,7 +954,7 @@
 
 .bg-super_space_turtle {
   width: 11px; height: 8px;
-  background: url('./items.png') -130px -172px;
+  background: url('./items.png') -260px -246px;
 }
 
 .bg-table_tech_blanks {
@@ -952,12 +982,12 @@
   background: url('./items.png') -105px -145px;
 }
 
-.bg-table_tech_shotgun {
+.bg-table_tech_sight {
   width: 19px; height: 18px;
   background: url('./items.png') -128px -145px;
 }
 
-.bg-table_tech_sight {
+.bg-table_tech_shotgun {
   width: 19px; height: 18px;
   background: url('./items.png') -151px -145px;
 }
@@ -994,22 +1024,22 @@
 
 .bg-vorpal_bullets {
   width: 12px; height: 18px;
-  background: url('./items.png') -223px -72px;
+  background: url('./items.png') -278px -175px;
 }
 
 .bg-wax_wings {
   width: 13px; height: 13px;
-  background: url('./items.png') -278px -139px;
+  background: url('./items.png') -19px -277px;
 }
 
 .bg-white_guon_stone {
   width: 9px; height: 12px;
-  background: url('./items.png') -97px -277px;
+  background: url('./items.png') -84px -277px;
 }
 
 .bg-wingman {
   width: 13px; height: 13px;
-  background: url('./items.png') -278px -156px;
+  background: url('./items.png') -36px -277px;
 }
 
 .bg-wolf {
@@ -1024,5 +1054,5 @@
 
 .bg-zombie_bullets {
   width: 9px; height: 14px;
-  background: url('./items.png') -310px -137px;
+  background: url('./items.png') -312px -272px;
 }

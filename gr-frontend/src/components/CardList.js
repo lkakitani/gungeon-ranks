@@ -41,11 +41,13 @@ export default class CardList extends React.Component {
       ballotRight: '',
       left: {
         name: '',
-        quote: ''
+        quote: '',
+        quality: ''
       },
       right: {
         name: '',
-        quote: ''
+        quote: '',
+        quality: ''
       }
     }
   }
