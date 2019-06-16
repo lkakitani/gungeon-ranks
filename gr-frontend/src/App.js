@@ -12,13 +12,13 @@ class App extends React.Component {
         <Router>
           <div className="ui inverted segment">
             <div className="ui inverted secondary menu">
-              <NavLink to="/" className="item" activeClassName="active" exact="true">
+              <NavLink to="/" className="item" activeClassName="active" exact>
                 Home
               </NavLink>
-              <NavLink to="/ranks" className="item" activeClassName="active">
+              <NavLink to="/ranks" className="item" activeClassName="active" exact>
                 Ranks
               </NavLink>
-              <NavLink to="/changes" className="item" activeClassName="active">
+              <NavLink to="/changes" className="item" activeClassName="active" exact>
                 News
               </NavLink>
             </div>
