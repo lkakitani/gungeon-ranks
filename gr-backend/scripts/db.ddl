@@ -20,6 +20,7 @@ CREATE TABLE items (
  created_at timestamp NOT NULL,
  updated_at timestamp NOT NULL,
  name varchar(200) NOT NULL,
+ type varchar(1) NOT NULL,
  quote VARCHAR(255),
  quality varchar(10),
  wiki_page varchar(400),
