@@ -21,7 +21,7 @@ export default class RankingsTable extends React.Component {
   render() {
     const ranks = this.state.ranks.map((item, index) => {
       const bgIconName = item.name
-        .replace(/['|(|)|+|\.]/g, '')
+        .replace(/['|(|)|+|.]/g, '')
         .replace(/[ |-]/g, '_')
         .toLowerCase();
 
