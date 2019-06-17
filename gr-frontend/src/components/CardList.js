@@ -1,5 +1,5 @@
 import React from 'react';
-import { Axios } from '../services/axios';
+import { Axios } from '../services/Axios';
 import { Card, RerollCard } from "../components/Card";
 
 export default class CardList extends React.Component {

@@ -3,6 +3,7 @@ const db = require('../db');
 
 const Item = db.define('item', {
   name: Sequelize.STRING,
+  type: Sequelize.STRING,
   quote: Sequelize.STRING,
   quality: Sequelize.STRING,
   wiki_page: Sequelize.STRING,

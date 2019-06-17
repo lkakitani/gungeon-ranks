@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import { Axios } from '../services/Axios';
 
 export default class RankingsTable extends React.Component {
 
@@ -8,7 +8,7 @@ export default class RankingsTable extends React.Component {
   };
 
   async componentDidMount() {
-    const res = await axios.get('http://localhost:3030/ranks');
+    const res = await Axios.getItemRanks();
     this.setState({ ranks: res.data });
   }
 
@@ -31,6 +31,7 @@ export default class RankingsTable extends React.Component {
         </td>
         <td data-label="Name">{item.name}</td>
         <td data-label="Quote">{item.quote}</td>
+        <td data-label="Type">{item.type === 'A' ? 'Active' : 'Passive'}</td>
         <td className="center aligned" data-label="Quality">{quality}</td>
         <td className="center aligned" data-label="EloRating">{item.elo_rating}</td>
       </tr>
@@ -44,6 +45,7 @@ export default class RankingsTable extends React.Component {
             <th>Icon</th>
             <th>Name</th>
             <th>Quote</th>
+            <th>Type</th>
             <th className="center aligned">Quality</th>
             <th className="center aligned">Rating</th>
           </tr>

@@ -6,5 +6,8 @@ export const Axios = {
   },
   getCandidates: async () => {
     return await axios.get(`${process.env.REACT_APP_GR_BACKEND_URL}/vote`);
+  },
+  getItemRanks: async () => {
+    return await axios.get(`${process.env.REACT_APP_GR_BACKEND_URL}/ranks`);
   }
 };
