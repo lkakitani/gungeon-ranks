@@ -8,6 +8,9 @@ export const Axios = {
     return await axios.get(`${process.env.REACT_APP_GR_BACKEND_URL}/vote`);
   },
   getItemRanks: async () => {
-    return await axios.get(`${process.env.REACT_APP_GR_BACKEND_URL}/ranks`);
+    return await axios.get(`${process.env.REACT_APP_GR_BACKEND_URL}/item-ranks`);
+  },
+  getGunRanks: async () => {
+    return await axios.get(`${process.env.REACT_APP_GR_BACKEND_URL}/gun-ranks`);
   }
 };

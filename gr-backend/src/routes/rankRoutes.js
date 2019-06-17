@@ -1,12 +1,15 @@
-const { getOptions, castVote, getRanking } = require('../controllers/rankController');
+const { getOptions, castVote, getItemRanking, getGunRanking } = require('../controllers/rankController');
 
 const routes = (app) => {
   app.route('/vote')
     .get(getOptions)
     .post(castVote);
 
-  app.route('/ranks')
-    .get(getRanking);
+  app.route('/item-ranks')
+    .get(getItemRanking);
+
+  app.route('/gun-ranks')
+    .get(getGunRanking);
 }
 
 module.exports = routes;

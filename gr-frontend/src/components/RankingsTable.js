@@ -8,20 +8,28 @@ export default class RankingsTable extends React.Component {
   };
 
   async componentDidMount() {
-    const res = await Axios.getItemRanks();
+    let res;
+    if (this.props.type === 'items') {
+      res = await Axios.getItemRanks();
+    }
+    else {
+      res = await Axios.getGunRanks();
+    }
     this.setState({ ranks: res.data });
   }
 
   render() {
     const ranks = this.state.ranks.map((item, index) => {
       const bgIconName = item.name
-        .replace(/['|(|)|+]/g, '')
+        .replace(/['|(|)|+|\.]/g, '')
         .replace(/[ |-]/g, '_')
         .toLowerCase();
+
       const quality = item.quality
         .replace('/', '')
         .split(',')
         .map(q => <div key={q} className={`ui image bg-quality_${q}`}></div>);
+
       return <tr key={item.id}>
         <td className="center aligned">{index + 1}</td>
         <td className="center aligned" data-label="icon">
@@ -31,7 +39,7 @@ export default class RankingsTable extends React.Component {
         </td>
         <td data-label="Name">{item.name}</td>
         <td data-label="Quote">{item.quote}</td>
-        <td data-label="Type">{item.type === 'A' ? 'Active' : 'Passive'}</td>
+        {this.props.type === 'guns' ? '' : <td data-label="Type">{item.type === 'A' ? 'Active' : 'Passive'}</td>}
         <td className="center aligned" data-label="Quality">{quality}</td>
         <td className="center aligned" data-label="EloRating">{item.elo_rating}</td>
       </tr>
@@ -45,7 +53,7 @@ export default class RankingsTable extends React.Component {
             <th>Icon</th>
             <th>Name</th>
             <th>Quote</th>
-            <th>Type</th>
+            {this.props.type === 'guns' ? '' : <th>Type</th>}
             <th className="center aligned">Quality</th>
             <th className="center aligned">Rating</th>
           </tr>

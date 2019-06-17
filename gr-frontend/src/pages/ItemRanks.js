@@ -6,7 +6,7 @@ export const ItemRanks = () => {
   return (
     <div>
       <Segment title="Ranks" />
-      <RankingsTable />
+      <RankingsTable type="items" />
     </div>
   );
 }

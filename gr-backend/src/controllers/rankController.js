@@ -1,4 +1,5 @@
 const Item = require('../models/Item');
+const Gun = require('../models/Gun');
 const Crypto = require('../services/crypto');
 const Rating = require('../services/rating');
 
@@ -27,8 +28,13 @@ const castVote = async (req, res) => {
   res.json({ status: 'ok' });
 }
 
-const getRanking = async (req, res) => {
+const getItemRanking = async (req, res) => {
   const rankings = await Item.getRankings();
+  res.json(rankings);
+}
+
+const getGunRanking = async (req, res) => {
+  const rankings = await Gun.getRankings();
   res.json(rankings);
 }
 
@@ -43,5 +49,5 @@ const buildVoteInfo = (option) => {
 }
 
 module.exports = {
-  getOptions, castVote, getRanking
+  getOptions, castVote, getItemRanking, getGunRanking
 }

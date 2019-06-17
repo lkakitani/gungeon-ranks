@@ -3,13 +3,24 @@ const db = require('../db');
 
 const Gun = db.define('gun', {
   name: Sequelize.STRING,
-  icon_path: Sequelize.STRING,
   quote: Sequelize.STRING,
   quality: Sequelize.STRING,
   wiki_page: Sequelize.STRING,
-  boss_rating: Sequelize.INTEGER,
-  room_rating: Sequelize.INTEGER,
+  elo_rating: Sequelize.INTEGER,
   vote_count: Sequelize.INTEGER
 });
+
+Gun.getCandidates = function () {
+  return this.findAll({
+    limit: 2,
+    order: Sequelize.fn('RANDOM')
+  });
+}
+
+Gun.getRankings = function () {
+  return this.findAll({
+    order: [['elo_rating', 'DESC']]
+  });
+}
 
 module.exports = Gun;
