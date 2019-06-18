@@ -11,7 +11,7 @@ INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_r
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Budget Revolver', 'Affordable Arms', 'N/A', 'Budget_Revolver', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Robot''s Right Hand', 'Built To Kill', 'N/A', 'Robot%27%27s_Right_Hand', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Robot''s Right Hand', 'Built To Kill', 'N/A', 'Robot%27s_Right_Hand', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Dart Gun', 'Sticky', 'N/A', 'Dart_Gun', 1200);
@@ -113,13 +113,13 @@ INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_r
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Flare Gun', 'Over Here', 'D', 'Flare_Gun', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Shades''s Revolver', 'Someone Loses An Eye', 'C', 'Shades%27%27s_Revolver', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Shades''s Revolver', 'Someone Loses An Eye', 'C', 'Shades%27s_Revolver', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Smiley''s Revolver', 'All Smiles', 'B', 'Smiley%27%27s_Revolver', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Smiley''s Revolver', 'All Smiles', 'B', 'Smiley%27s_Revolver', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Knight''s Gun', 'Plowshare', 'A', 'Knight%27%27s_Gun', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Knight''s Gun', 'Plowshare', 'A', 'Knight%27s_Gun', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'GuNNER', 'Backpack Not Included', 'B', 'GuNNER', 1200);
@@ -338,7 +338,7 @@ INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_r
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'RUBE-ADYNE MK.II', 'Polished Product', 'A', 'RUBE-ADYNE_MK.II', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Rubenstein''s Monster', 'Unit 00', 'N/A', 'Rubenstein%27%27s_Monster', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Rubenstein''s Monster', 'Unit 00', 'N/A', 'Rubenstein%27s_Monster', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Chamber Gun', 'Product of Environment', 'C', 'Chamber_Gun', 1200);
@@ -431,7 +431,7 @@ INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_r
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Yari Launcher', 'Hell. Yes.', 'S', 'Yari_Launcher', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Lil'' Bomber', 'ReFuse To Lose!', 'D', 'Lil%27%27_Bomber', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Lil'' Bomber', 'ReFuse To Lose!', 'D', 'Lil%27_Bomber', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Grasschopper', 'Noisy', 'A', 'Grasschopper', 1200);
@@ -461,7 +461,7 @@ INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_r
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Teapot', 'Monocular Monster', 'C', 'Teapot', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Gunslinger''s Ashes', 'Spirit, Willing', 'C', 'Gunslinger%27%27s_Ashes', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Gunslinger''s Ashes', 'Spirit, Willing', 'C', 'Gunslinger%27s_Ashes', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Luxin Cannon', 'Omnichrome', 'C', 'Luxin_Cannon', 1200);
@@ -506,7 +506,7 @@ INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_r
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Machine Fist', 'Avalanche Of Bullets', 'A', 'Machine_Fist', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Robot''s Left Hand', 'See You Later', 'A', 'Robot%27%27s_Left_Hand', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Robot''s Left Hand', 'See You Later', 'A', 'Robot%27s_Left_Hand', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Snowballer', 'May Contain Rocks', 'D', 'Snowballer', 1200);
@@ -617,7 +617,7 @@ INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_r
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Brick Breaker', 'Wrong Kind Of Mortar', 'C', 'Brick_Breaker', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
-      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Betrayer''s Shield', 'Actually A Gun', 'B', 'Betrayer%27%27s_Shield', 1200);
+      VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Betrayer''s Shield', 'Actually A Gun', 'B', 'Betrayer%27s_Shield', 1200);
 
 INSERT INTO guns (created_at, updated_at, name, quote, quality, wiki_page, elo_rating) 
       VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Lower Case r', 'Alphabetical!', 'D', 'Lower_Case_r', 1200);
