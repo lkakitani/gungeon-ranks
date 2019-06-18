@@ -4,7 +4,13 @@ const Crypto = require('../services/crypto');
 const Rating = require('../services/rating');
 
 const getOptions = async (req, res) => {
-  const voteOptions = await Item.getCandidates();
+
+  let voteOptions;
+  if (Math.random() < process.env.ITEM_PROBABILITY) {
+    voteOptions = await Item.getCandidates();
+  } else {
+    voteOptions = await Gun.getCandidates();
+  }
   const left = voteOptions[0];
   const right = voteOptions[1];
 
@@ -14,6 +20,7 @@ const getOptions = async (req, res) => {
     left: buildVoteInfo(left),
     right: buildVoteInfo(right)
   });
+
 }
 
 const castVote = async (req, res) => {
@@ -39,13 +46,14 @@ const getGunRanking = async (req, res) => {
 }
 
 const buildBallot = (chosenOption, otherOption) => {
-  const vote = `${chosenOption.id}::${otherOption.id}::${Date.now()}`;
+  const type = (chosenOption instanceof Gun) ? 'gun' : 'item';
+  const vote = `${chosenOption.id}::${otherOption.id}::${type}::${Date.now()}`;
   return Crypto.encrypt(vote);
 }
 
 const buildVoteInfo = (option) => {
-  const { id, name, quality, quote, icon_path, wiki_page } = option;
-  return { id, name, quality, quote, icon_path, wiki_page };
+  const { id, name, quality, quote, wiki_page } = option;
+  return { id, name, quality, quote, wiki_page };
 }
 
 module.exports = {

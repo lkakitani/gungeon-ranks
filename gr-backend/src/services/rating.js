@@ -1,6 +1,8 @@
 const Crypto = require('../services/crypto');
 const Item = require('../models/Item');
+const Gun = require('../models/Gun');
 const ItemResult = require('../models/ItemResult');
+const GunResult = require('../models/GunResult');
 const EloRank = require('elo-rank');
 const elo = new EloRank(32);
 
@@ -8,8 +10,7 @@ class Rating {
 
   static async computeVote(ballot) {
     try {
-      const [chosenId, otherId, timestamp] = this.getBallotInfo(ballot);
-
+      const [chosenId, otherId, type, timestamp] = this.getBallotInfo(ballot);
       const now = Date.now();
       if (now - (parseInt(timestamp)) < process.env.MILISECONDS_INTERVAL) {
         console.log('Vote interval too short');
@@ -18,16 +19,32 @@ class Rating {
       // other validations
 
       // compute vote, calculate ratings
-      const chosenItem = await Item.findByPk(chosenId);
-      const otherItem = await Item.findByPk(otherId);
+      let chosenItem, otherItem;
+      if (type === 'item') {
+        chosenItem = await Item.findByPk(chosenId);
+        otherItem = await Item.findByPk(otherId);
 
-      await ItemResult
-        .build({
-          winner_id: chosenId,
-          loser_id: otherId,
-          unique_vote: ballot,
-        })
-        .save();
+        await ItemResult
+          .build({
+            winner_id: chosenId,
+            loser_id: otherId,
+            unique_vote: ballot,
+          })
+          .save();
+
+      } else {
+        chosenItem = await Gun.findByPk(chosenId);
+        otherItem = await Gun.findByPk(otherId);
+
+        await GunResult
+          .build({
+            winner_id: chosenId,
+            loser_id: otherId,
+            unique_vote: ballot,
+          })
+          .save();
+
+      }
 
       const { winnerElo, loserElo } = this.calculateElo({
         scoreWinner: chosenItem.elo_rating,
