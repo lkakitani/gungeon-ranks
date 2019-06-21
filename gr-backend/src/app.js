@@ -4,12 +4,11 @@ const routes = require('./routes/rankRoutes');
 // todo remove cors
 const cors = require('cors');
 
-// require('dotenv').config();
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ origin: process.env.CORS_ORIGIN }));
 
 routes(app);
 
