@@ -10,6 +10,7 @@ export default class CardList extends React.Component {
   async componentDidMount() {
     this.reroll();
     document.addEventListener("keydown", this.handleKeyBindingVote.bind(this));
+    window.cardButtonPopup();
   }
 
   async vote(ballot) {

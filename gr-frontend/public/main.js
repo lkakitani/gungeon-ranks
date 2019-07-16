@@ -1,4 +1,7 @@
 $(document).ready(function () {
   $('.dropdown').dropdown();
-  $('.card-button').popup();
 });
+
+function cardButtonPopup() {
+  $('.card-button').popup();
+}
