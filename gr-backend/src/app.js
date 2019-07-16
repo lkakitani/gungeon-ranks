@@ -6,6 +6,10 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
+if (process.env.CORS_ENABLED === 'true') {
+  const cors = require('cors');
+  app.use(cors({ origin: process.env.CORS_ORIGIN }));
+}
 
 routes(app);
 
