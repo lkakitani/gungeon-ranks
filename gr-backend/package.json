@@ -19,7 +19,6 @@
     "sequelize": "^5.8.6"
   },
   "devDependencies": {
-    "cors": "^2.8.5",
     "nodemon": "^1.19.0",
     "xml2js": "^0.4.19"
   }
