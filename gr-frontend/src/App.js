@@ -35,8 +35,12 @@ class App extends React.Component {
           <Route path="/ranks/guns" component={GunRanks} />
           <Route path="/changes/" component={Changes} />
         </Router>
-      </div>
 
+        <div className="ui padded vertical footer segment">
+          © 2019 <a href="mailto:leonardo.kakitani@gmail.com">Leonardo Kakitani</a>.
+          This is an independent site not run by or associated with Dodge Roll games. All sprites and artworks are properties of <a href="https://dodgeroll.com/gungeon/" target="_blank" rel="noopener noreferrer">Dodge Roll</a> and <a href="https://www.devolverdigital.com/" target="_blank" rel="noopener noreferrer">Devolver Digital</a>.
+        </div>
+      </div>
     );
   }
 
