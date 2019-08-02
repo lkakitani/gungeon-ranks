@@ -3,7 +3,7 @@ import React from 'react';
 export class Card extends React.Component {
   render() {
     const bgIconName = this.props.item.name
-      .replace(/['|(|)|+]/g, '')
+      .replace(/['|(|)|+|.]/g, '')
       .replace(/[ |-]/g, '_')
       .toLowerCase();
     const quality = this.props.item.quality
