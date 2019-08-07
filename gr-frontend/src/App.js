@@ -37,7 +37,7 @@ class App extends React.Component {
         </Router>
 
         <div className="ui padded vertical footer segment">
-          © 2019 <a href="mailto:gungeonranks@gmail.com">Gungeon Ranks</a>.
+          © 2019 <a href="https://github.com/lkakitani/">Gungeon Ranks</a>.
           This is an independent site not run by or associated with Dodge Roll games. All sprites and artworks are properties of <a href="https://dodgeroll.com/gungeon/" target="_blank" rel="noopener noreferrer">Dodge Roll</a> and <a href="https://www.devolverdigital.com/" target="_blank" rel="noopener noreferrer">Devolver Digital</a>.
         </div>
       </div>
