@@ -58,7 +58,9 @@ export default class CardList extends React.Component {
       <div className="ui three column grid">
 
         <div className="column">
-          <Card item={this.state.vote.left} onClick={() => this.vote(this.state.vote.ballotLeft)} position="left" />
+          <div className="content">
+            <Card item={this.state.vote.left} onClick={() => this.vote(this.state.vote.ballotLeft)} position="left" />
+          </div>
         </div>
 
         <div className="column">
